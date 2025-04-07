@@ -2,7 +2,7 @@
 'RCET 0226
 'Spring 2025
 'Math Contest
-'
+'https://github.com/BrandLeBar/MathContest.git
 
 Option Explicit On
 Option Strict On
@@ -187,7 +187,7 @@ Public Class MathContestForm
                     MsgBox("Correct")
                     ScoreCounter()
                 Else
-                    MsgBox("Incorrect")
+                    MsgBox($"Incorrect, answer was {Add()}")
                 End If
                 AttemptCounter()
             Catch ex As Exception
@@ -200,7 +200,7 @@ Public Class MathContestForm
                     MsgBox("Correct")
                     ScoreCounter()
                 Else
-                    MsgBox("Incorrect")
+                    MsgBox($"Incorrect, answer was {Subtract()}")
                 End If
                 AttemptCounter()
             Catch ex As Exception
@@ -213,7 +213,7 @@ Public Class MathContestForm
                     MsgBox("Correct")
                     ScoreCounter()
                 Else
-                    MsgBox("Incorrect")
+                    MsgBox($"Incorrect, answer was {Multiply()}")
                 End If
                 AttemptCounter()
             Catch ex As Exception
@@ -226,7 +226,7 @@ Public Class MathContestForm
                     MsgBox("Correct")
                     ScoreCounter()
                 Else
-                    MsgBox("Incorrect")
+                    MsgBox($"Incorrect, answer was {Divide()}")
                 End If
                 AttemptCounter()
             Catch ex As Exception
